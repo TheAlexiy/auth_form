@@ -1,0 +1,1 @@
+Database queries work properly
