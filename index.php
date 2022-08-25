@@ -10,4 +10,7 @@
         <input type="password" class="form-control" id="password" name="password" required>
     </div>
     <button type="submit" class="btn btn-primary">Register</button>
+    <div class="d-flex justify-content-between">
+        <a class="btn btn-outline-primary" href="login.php">Already have an account?</a>
+    </div>
 </form>

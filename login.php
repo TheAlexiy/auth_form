@@ -11,6 +11,8 @@
     </div>
     <div class="d-flex justify-content-between">
         <button type="submit" class="btn btn-primary">Login</button>
-        <a class="btn btn-outline-primary" href="index.php">Register</a>
+    </div>
+    <div class="d-flex justify-content-between">
+        <a class="btn btn-outline-primary" href="index.php">Don't have an account? Register now</a>
     </div>
 </form>
