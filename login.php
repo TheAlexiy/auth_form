@@ -8,7 +8,8 @@ if (check_auth()) {
 }
 ?>
 <h1 class="mb-5">Login</h1>
-
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<?php flash('Регистрация прошла успешно!') ?>
 <form method="post" action="do_login.php">
     <div class="mb-3">
         <label for="username" class="form-label">Username</label>

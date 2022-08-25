@@ -13,12 +13,15 @@ if (check_auth()) {
 <?php
 if ($user) { ?>
     <h1>Welcome back, <?= htmlspecialchars($user['username']) ?>!</h1>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <form class="mt-5" method="post" action="do_logout.php">
         <button type="submit" class="btn btn-primary">Logout</button>
     </form>
     <?php
 } else { ?>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <h1 class="mb-5">Registration</h1>
+    <?php flash('Зарегистрируйтесь для продолжения'); ?>
     <form method="post" action="do_register.php">
         <div class="mb-3">
             <label for="username" class="form-label">Username</label>

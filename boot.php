@@ -15,6 +15,7 @@ function pdo(): PDO
 
     return $pdo;
 }
+
 function flash(?string $message = null)
 {
     if ($message) {
@@ -22,12 +23,14 @@ function flash(?string $message = null)
     } else {
         if ($_SESSION['flash']) { ?>
             <div class="alert alert-danger mb-3">
-                <?=$_SESSION['flash']?>
+                <?= $_SESSION['flash'] ?>
             </div>
-        <?php }
+        <?php
+        }
         unset($_SESSION['flash']);
     }
 }
+
 function check_auth(): bool
 {
     return !!($_SESSION['user_id'] ?? false);
