@@ -1,3 +1,12 @@
+<?php
+
+require_once __DIR__.'/boot.php';
+
+if (check_auth()) {
+    header('Location: /');
+    die;
+}
+?>
 <h1 class="mb-5">Login</h1>
 
 <form method="post" action="do_login.php">
