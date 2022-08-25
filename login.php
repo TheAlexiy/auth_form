@@ -1,6 +1,6 @@
 <h1 class="mb-5">Login</h1>
 
-<form method="post" >
+<form method="post" action="do_login.php">
     <div class="mb-3">
         <label for="username" class="form-label">Username</label>
         <input type="text" class="form-control" id="username" name="username" required>
