@@ -3,7 +3,7 @@
 require_once __DIR__.'/boot.php';
 
 if (check_auth()) {
-    header('Location: /');
+    header('Location: /auth_form');
     die;
 }
 ?>

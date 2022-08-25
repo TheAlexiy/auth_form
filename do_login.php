@@ -20,7 +20,7 @@ if (password_verify($_POST['password'], $user['password'])) {
         ]);
     }
     $_SESSION['user_id'] = $user['id'];
-    header('Location: /');
+    header('Location: /auth_form');
     die;
 }
 
