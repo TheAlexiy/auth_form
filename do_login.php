@@ -5,7 +5,6 @@ require_once __DIR__ . '/boot.php';
 $stmt = pdo()->prepare("SELECT * FROM `users` WHERE `username` = :username");
 $stmt->execute(['username' => $_POST['username']]);
 if (!$stmt->rowCount()) {
-    flash('Пользователь с такими данными не зарегистрирован');
     header('Location: login.php');
     die;
 }
@@ -24,5 +23,4 @@ if (password_verify($_POST['password'], $user['password'])) {
     die;
 }
 
-flash('Неверный пароль');
 header('Location: login.php');
