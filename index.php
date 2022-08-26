@@ -28,20 +28,20 @@ if ($user) { ?>
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous">
-    <h1 class="mx-auto mt-3" style="width: 300px">Registration</h1>
+    <h1 class="mx-auto mt-3" style="width: 250px">Registration</h1>
     <form method="post" action="do_register.php">
         <div class="container h-50">
             <div class="row h-50 justify-content-center align-items-center">
                 <div class="col-10 col-md-8 col-lg-5">
-                    <div class="form-group" style="max-width: 350px">
+                    <div class="form-group" style="max-width: 400px">
                         <label for="username">Username</label>
                         <input type="text"
                                class="form-control"
                                id="username"
-                               name="username"
-                               required placeholder="Введите имя пользователя">
+                               name="username" required
+                               placeholder="Введите имя пользователя">
                     </div>
-                    <div class="form-group" style="width: 350px">
+                    <div class="form-group" style="width: 400px">
                         <label for="password" class="form-label">Password</label>
                         <input type="password"
                                class="form-control"
@@ -51,9 +51,7 @@ if ($user) { ?>
                     </div>
                     <div class="row">
                         <button type="submit" class="btn btn-primary mr-5 mx-3">Register</button>
-                        <div class="d-flex justify-content-between">
-                            <a class="btn btn-outline-primary" href="login.php">Already have an account?</a>
-                        </div>
+                        <a class="btn btn-outline-primary ml-5" href="login.php">Already have an account?</a>
                     </div>
                 </div>
             </div>
