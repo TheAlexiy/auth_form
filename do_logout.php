@@ -3,4 +3,4 @@
 require_once __DIR__ . '/boot.php';
 
 $_SESSION['user_id'] = null;
-header('Location: /auth_form');
+header('Location: login.php');
