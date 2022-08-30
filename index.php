@@ -39,7 +39,7 @@ if ($user) { ?>
     <div class="bg-image" style="background-image: url(bg.jpg); height: 100vh">
         <h1 class="d-flex justify-content-center">Registration</h1>
         <form method="post" action="do_register.php">
-            <div class="container h-50 mt-5" style="width: 400px">
+            <div class="container h-50 mt-5" style="width: 450px">
                 <div class="form-group">
                     <label for="username">Username</label>
                     <input type="text"
@@ -49,7 +49,7 @@ if ($user) { ?>
                            placeholder="Введите имя пользователя">
                 </div>
                 <div class="form-group">
-                    <label for="password" class="form-label">Password</label>
+                    <label for="password">Password</label>
                     <input type="password"
                            class="form-control"
                            id="password"
