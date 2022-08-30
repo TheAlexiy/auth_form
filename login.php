@@ -16,7 +16,7 @@ if (check_auth()) {
     <form method="post" action="do_login.php">
         <div class="container h-50 mt-5" style="width: 450px">
             <div class="form-group">
-                <label for="username">Username</label>
+                <label for="username" class="font-weight-bold">Username</label>
                 <input type="text"
                        class="form-control"
                        id="username"
@@ -24,7 +24,7 @@ if (check_auth()) {
                        placeholder="Введите имя пользователя">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
+                <label for="password" class="font-weight-bold">Password</label>
                 <input type="password"
                        class="form-control"
                        id="password"
