@@ -8,6 +8,7 @@ if (check_auth()) {
     $stmt = pdo()->prepare("SELECT * FROM `users` WHERE `id` = :id");
     $stmt->execute(['id' => $_SESSION['user_id']]);
     $user = $stmt->fetch(PDO::FETCH_ASSOC);
+    $_SESSION['username'] = $user['username'];
 }
 ?>
 <?php
@@ -17,7 +18,7 @@ if ($user) { ?>
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous">
     <div class="bg-image" style="background-image: url(bg.jpg); height: 100vh">
-        <h1 class="mx-auto" style="width: 300px">Welcome, <?= htmlspecialchars($user['username']) ?>! </h1>
+        <h1 class="mx-auto" style="width: 300px">Welcome, <?= htmlspecialchars($_SESSION['username']) ?>! </h1>
         <div class="row mx-auto mt-3" style="width: 400px">
             <div class="text-truncate mt-5">
                 <p class="ml-5 "> Would you like to give some feedback?</p>
@@ -29,7 +30,6 @@ if ($user) { ?>
             </form>
         </div>
     </div>
-
     <?php
 } else { ?>
     <body class="h-100 mt-lg-0">

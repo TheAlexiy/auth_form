@@ -16,5 +16,5 @@ function pdo(): PDO
 
 function check_auth(): bool
 {
-    return !!($_SESSION['user_id'] ?? false);
+    return isset($_SESSION['user_id']);
 }
