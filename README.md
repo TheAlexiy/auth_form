@@ -1,7 +1,5 @@
 # Форма регистрации/авторизации
 
-- Database queries work properly
-- Redirects are working properly
-- Flash messages are removed
-- Bootstrap enabled
-- Auth/reg form is completed
+### Известные проблемы
+- Не хватает валидации данных
+- Аутентификация не только по email(подходят любые данные, лишь бы соблюдалась уникальность)
