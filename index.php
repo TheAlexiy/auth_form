@@ -18,15 +18,23 @@ if ($user) { ?>
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous">
     <div class="bg-image" style="background-image: url(bg.jpg); height: 100vh">
-        <h1 class="mx-auto" style="width: 300px">Welcome, <?= htmlspecialchars($_SESSION['username']) ?>! </h1>
-        <div class="row mx-auto mt-3" style="width: 400px">
-            <div class="text-truncate mt-5">
-                <p class="ml-5 "> Would you like to give some feedback?</p>
-                <p> That would be very useful for further development</p>
+        <h1 class="d-flex justify-content-center">Welcome, <?= htmlspecialchars($_SESSION['username']) ?>! </h1>
+        <div class="container h-50 mt-5" style="width: 450px">
+            <div class="mt-5 ">
+                <div class="form-group d-flex justify-content-center">
+                    <p> Would you like to leave us feedback?</p>
+                </div>
+                <div class="form-group d-flex justify-content-center">
+                    <p> That would be very useful for further development</p>
+                </div>
             </div>
-            <form class="" method="post" action="do_logout.php">
-                <a class="btn btn-primary mt-3 ml-5 mr-5" href="feedback.php">Proceed</a>
-                <button type="submit" class="btn btn-outline-primary mt-3 ml-5">Logout</button>
+            <form class="row justify-content-between" method="post" action="do_logout.php">
+                <div class="btn">
+                    <a class="btn btn-primary ml-5" href="feedback.php">Proceed</a>
+                </div>
+                <div class="btn">
+                    <button type="submit" class="btn btn-outline-primary mr-5">Logout</button>
+                </div>
             </form>
         </div>
     </div>
