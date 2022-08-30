@@ -79,7 +79,7 @@
                     </div>
                     <div class="row mt-3" style="max-width: 400px">
                         <button type="submit" class="btn btn-primary mr-5 mx-3">Submit</button>
-                        <a class="btn btn-outline-primary ml-5 align-content-end" href="do_reset.php">Reset form</a>
+                        <button type="reset" class="btn btn-outline-primary ml-5" >Reset form</button>
                     </div>
                 </div>
             </div>
