@@ -13,10 +13,6 @@ if (check_auth()) {
 ?>
 <?php
 if ($user) { ?>
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-          crossorigin="anonymous">
     <div class="bg-image" style="background-image: url(bg.jpg); height: 100vh">
         <h1 class="d-flex justify-content-center">Welcome, <?= htmlspecialchars($_SESSION['username']) ?>! </h1>
         <div class="container h-50 mt-5" style="width: 450px">
@@ -40,10 +36,6 @@ if ($user) { ?>
     </div>
     <?php
 } else { ?>
-    <link rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-          integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-          crossorigin="anonymous">
     <div class="bg-image" style="background-image: url(bg.jpg); height: 100vh">
         <h1 class="d-flex justify-content-center">Registration</h1>
         <form method="post" action="do_register.php">
