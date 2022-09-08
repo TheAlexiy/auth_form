@@ -46,7 +46,7 @@ if ($user) { ?>
                            class="form-control"
                            id="username"
                            name="username" required
-                           placeholder="Введите имя пользователя">
+                           placeholder="Enter username">
                 </div>
                 <div class="form-group">
                     <label for="password" class="font-weight-bold">Password</label>
@@ -54,7 +54,7 @@ if ($user) { ?>
                            class="form-control"
                            id="password"
                            name="password" required
-                           placeholder="Введите пароль">
+                           placeholder="Enter password">
                 </div>
                 <div class="row justify-content-between">
                     <div class="btn">
